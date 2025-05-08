@@ -3,7 +3,7 @@
 
 the keyof keyword as like work union of all properties names.its very helpful for creating type safe access to object properties
 
-============>use case========
+ ## use case========
 keyof ensure that you can  only  access valid  key of objects
 ## Example
 type User = {
@@ -27,7 +27,7 @@ The keyof keyword lets you extract the property names (keys) of a type as a unio
 ====================== type union=============
 A union type allows a variable to hold values of multiple types. You can specify a union type by separating the types with the | (pipe) operator.
 
-=============== example===========
+## example===========
 
 // union types (|)
 
@@ -50,11 +50,11 @@ name:"munna",
 gender:"male",
 bloodGroup:"B+"
 }
-============== type  Intersection ================
+## type  Intersection ================
 
 An intersection type is used when you want to combine multiple types into one. A value of an intersection type must satisfy all the types involved. You use the & (ampersand) operator to define an intersection type.
 
-========= intersection example ===============
+## intersection example ===============
 
 type FrontendDeveloper={
     skills:string[];

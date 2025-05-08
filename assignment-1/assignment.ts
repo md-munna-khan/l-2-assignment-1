@@ -1,6 +1,5 @@
 {
-    //
-    // problem 1 
+   
 function formatString(input: string, toUpper?: boolean): string{
 if( toUpper===false){
     return input.toLowerCase()
@@ -8,9 +7,9 @@ if( toUpper===false){
     return input.toUpperCase()
 }
 }
-// console.log(formatString("munna",))
 
-// problem 2
+
+
 
 const books = [
     { title: "Book A", rating: 4.5 },
@@ -23,11 +22,9 @@ const rating =items.filter(item=>item.rating >=4)
 return rating
     
 }
-// console.log( filterByRating(books))
-  // Output: [ { title: "Book A", rating: 4.5 }, { title: "Book C", rating: 5.0 } ]
 
 
-  // problem 3
+
 
   function concatenateArrays<T>(...arrays: T[][]): T[]{
   return arrays.reduce((acc,curr)=>acc.concat(curr),[])
@@ -36,9 +33,9 @@ return rating
 
  const result= concatenateArrays(["a", "b"], ["c"]);  
  const result1=concatenateArrays([1, 2], [3, 4], [5]); 
-//  console.log(result,result1)
 
-// problem 4
+
+
 class Vehicle{
     private  make:string;
   private  year:number
@@ -64,20 +61,18 @@ class Car extends Vehicle{
    }
 }
 const myCar= new Car("toyota,",2022,"Corolla")
-// myCar.getInfo()
-// myCar.getModel()
 
-// problem 5
+
+
 function processValue(value: string | number): number{
     if( typeof value === "string"){
         return value.length
     }else ( typeof value === "number")
        return value*2
 }
-//  console.log( processValue("hello munna bro how  "))
-//  console.log(processValue(50))
 
-// problem 6
+
+
 interface Product {
     name: string;
     price: number;
@@ -100,9 +95,9 @@ interface Product {
   return highPrice
   }
   console.log(getMostExpensiveProduct(products))
-  // Output: { name: "Bag", price: 50 }
+ 
 
-  // problem 7
+
 enum Day {
     Monday,
     Tuesday,
@@ -121,11 +116,7 @@ function getDayType(day: Day): string{
     }
 
 }
-//  console.log(getDayType(Day.Sunday))  ;   
-//  console.log(getDayType(Day.Monday))  ; 
- 
- 
- // problem 8
+
 
  async function squareAsync(n: number): Promise<number>{
  
@@ -142,10 +133,6 @@ function getDayType(day: Day): string{
   })
  }    
 
-//  squareAsync(4).then(console.log);        // Output after 1s: 16
-//  squareAsync(-3).catch(console.error);    // Output: Error: Negative number not allowed
-
-      // Output after 1s: 16
-    // Output: Error: Negative number not allowed  
+ 
 //
 }
