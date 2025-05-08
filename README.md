@@ -6,17 +6,20 @@ the keyof keyword as like work union of all properties names.its very helpful fo
  ## use case========
 keyof ensure that you can  only  access valid  key of objects
 ## Example
+```ts 
 type User = {
   name: string;
   age: number;
   email: string;
 };
 
+
 // keyof User gives: "name" | "age" | "email"
 type UserKeys = keyof User;
 
 const key: UserKeys = "name"; //  Valid
 // const invalidKey: UserKeys = "address"; //  Error
+```
 # summary
 The keyof keyword lets you extract the property names (keys) of a type as a union of string literals. By using keyof, you ensure that you're only accessing valid object keys, which helps prevent errors and makes your code more type-safe.
 
@@ -30,7 +33,7 @@ A union type allows a variable to hold values of multiple types. You can specify
 ## example===========
 
 // union types (|)
-
+```ts 
 type FrontendDeveloper= 'fakibazDev'| "goodDev"
 type FullStackDeveloper= 'Mern Dev'| "goodDev"
 type Developer = FrontendDeveloper | FullStackDeveloper
@@ -50,12 +53,13 @@ name:"munna",
 gender:"male",
 bloodGroup:"B+"
 }
+```
 ## type  Intersection ================
 
 An intersection type is used when you want to combine multiple types into one. A value of an intersection type must satisfy all the types involved. You use the & (ampersand) operator to define an intersection type.
 
 ## intersection example ===============
-
+```ts 
 type FrontendDeveloper={
     skills:string[];
     roll1:"Frontend Developer"
@@ -74,3 +78,4 @@ const fullStackDeveloper:FullStackDeveloper={
     roll1:"Frontend Developer",
     roll2:"Backend Developer"
 }
+```
