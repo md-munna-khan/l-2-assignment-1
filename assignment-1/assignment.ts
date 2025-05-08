@@ -114,7 +114,7 @@ enum Day {
 }
 
 function getDayType(day: Day): string{
-    if(day === Day.Saturday ||day ===Day.Sunday){
+    if(day === Day.Saturday ||day === Day.Sunday){
         return "Weekend"
     }else{
         return "Weekday"
@@ -137,7 +137,7 @@ function getDayType(day: Day): string{
         }, 1000);
     }
     else if(n < 0){
-        reject("negative number not allowed")
+        reject("Negative number not allowed")
       }
   })
  }    
